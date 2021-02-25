@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>641</width>
+    <height>382</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>570</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="psa">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="openExternalLinks">
+         <bool>true</bool>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::TextBrowserInteraction</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="closepsa">
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>621</width>
+         <height>292</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>641</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBots">
+    <property name="title">
+     <string>Bots</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionLoad_from_Profile"/>
+    <addaction name="separator"/>
+    <addaction name="actionLoad_Session"/>
+    <addaction name="actionSave_current_Session"/>
+    <addaction name="actionLoad_last_Session"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menulang">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionSettings"/>
+   </widget>
+   <widget class="QMenu" name="menuMics">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionPacket_Logger"/>
+    <addaction name="actionAkt_4_Status"/>
+    <addaction name="actionArena_of_Talents"/>
+    <addaction name="actionAuto_Buff_Master"/>
+    <addaction name="actionUse_all_available_Buffs"/>
+    <addaction name="actionCompliment_Player"/>
+    <addaction name="separator"/>
+    <addaction name="actionControls"/>
+   </widget>
+   <addaction name="menuBots"/>
+   <addaction name="menuMics"/>
+   <addaction name="menulang"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionLoad_from_Profile">
+   <property name="text">
+    <string>Load from Profile</string>
+   </property>
+  </action>
+  <action name="actionPacket_Logger">
+   <property name="text">
+    <string>Packet Logger</string>
+   </property>
+  </action>
+  <action name="actionAkt_4_Status">
+   <property name="text">
+    <string>Akt 4 Status</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionDeutsch">
+   <property name="text">
+    <string>German</string>
+   </property>
+  </action>
+  <action name="actionFrench">
+   <property name="text">
+    <string>French</string>
+   </property>
+  </action>
+  <action name="actionLoad_last_Session">
+   <property name="text">
+    <string>Recover old Session</string>
+   </property>
+  </action>
+  <action name="actionSave_current_Session">
+   <property name="text">
+    <string>Save Session</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionLoad_Session">
+   <property name="text">
+    <string>Load Session</string>
+   </property>
+  </action>
+  <action name="actionArena_of_Talents">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Arena of Talents</string>
+   </property>
+  </action>
+  <action name="actionAuto_Buff_Master">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Auto Buff Master</string>
+   </property>
+  </action>
+  <action name="actionUse_all_available_Buffs">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Use all available Buffs</string>
+   </property>
+  </action>
+  <action name="actionCompliment_Player">
+   <property name="text">
+    <string>Compliment Player</string>
+   </property>
+  </action>
+  <action name="actionControls">
+   <property name="text">
+    <string>Controls</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>closepsa</tabstop>
+  <tabstop>scrollArea</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

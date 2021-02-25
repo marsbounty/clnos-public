@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/profiles">
+        <file>ressources/statusgreen.png</file>
+        <file>ressources/statusorange.png</file>
+        <file>ressources/statusred.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>ressources/settings.png</file>
+        <file>ressources/chat-icon.png</file>
+        <file>ressources/map.png</file>
+        <file>ressources/settingsicon.png</file>
+        <file>ressources/shopicon.png</file>
+        <file>ressources/mapicon.png</file>
+    </qresource>
+    <qresource prefix="/files">
+        <file>ressources/xorTable</file>
+    </qresource>
+</RCC>
